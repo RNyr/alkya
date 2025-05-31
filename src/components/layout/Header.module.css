@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #002d5a; /* bleu foncé comme sur l'image */
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+}
+
+.languageButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.languageButtons button {
+  background: none;
+  border: none;
+  color: #004a99; /* bleu */
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.languageButtons button:hover {
+  color: #002d5a;
+}
+
+.quickMenu {
+  display: flex;
+  gap: 40px;
+  border-top: 1px solid #002d5a;
+  padding-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #004a99;
+}
+
+.quickMenu button,
+.quickMenu a,
+.quickMenu .nav-link-button {
+  background: none;
+  border: none;
+  color: #004a99;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.quickMenu button:hover,
+.quickMenu a:hover,
+.quickMenu .nav-link-button:hover {
+  color: #002d5a;
+  text-decoration: underline;
+}
+
+/* Pour les sous-menus, si tu gardes le dropdown */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 180px;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+.nav-item:hover > .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 10px 15px;
+}
+
+.submenu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: #666;
+}
