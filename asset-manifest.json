@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/alkya/static/css/main.56e91d7d.css",
-    "main.js": "/alkya/static/js/main.fb4f9c93.js",
+    "main.js": "/alkya/static/js/main.10602e5d.js",
     "index.html": "/alkya/index.html",
     "main.56e91d7d.css.map": "/alkya/static/css/main.56e91d7d.css.map",
-    "main.fb4f9c93.js.map": "/alkya/static/js/main.fb4f9c93.js.map"
+    "main.10602e5d.js.map": "/alkya/static/js/main.10602e5d.js.map"
   },
   "entrypoints": [
     "static/css/main.56e91d7d.css",
-    "static/js/main.fb4f9c93.js"
+    "static/js/main.10602e5d.js"
   ]
 }
