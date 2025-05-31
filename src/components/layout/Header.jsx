@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { t, i18n } = useTranslation('header');
@@ -11,40 +11,38 @@ const Header = () => {
   return (
     <header>
       <div>
-        <div className={styles.languageButtons}>
-          <button onClick={() => changeLanguage('fr')}>FR</button>
-          <button onClick={() => changeLanguage('en')}>EN</button>
-        </div>
+        <button onClick={() => changeLanguage('fr')}>FR</button>
+        <button onClick={() => changeLanguage('en')}>EN</button>
       </div>
 
       <nav>
-        <ul className={`${styles.quickMenu} nav-menu`}>
-          <li className="nav-item">
-            <button type="button" className="nav-link-button">{t('legroupe')}</button>
-            <ul className="submenu">
-              <li><a href="/nous-decouvrir">{t('nousdecouvrir')}</a></li>
-              <li><a href="/nos-valeurs">{t('nosvaleurs')}</a></li>
-              <li><a href="/equipe">{t('equipe')}</a></li>
+        <ul>
+          <li>
+            <button type="button">{t('legroupe')}</button>
+            <ul>
+              <li><Link to="/nous-decouvrir">{t('nousdecouvrir')}</Link></li>
+              <li><Link to="/nos-valeurs">{t('nosvaleurs')}</Link></li>
+              <li><Link to="/equipe">{t('equipe')}</Link></li>
             </ul>
           </li>
-          <li className="nav-item">
-            <button type="button" className="nav-link-button">{t('activites')}</button>
-            <ul className="submenu">
-              <li><a href="/consulting">{t('consulting')}</a></li>
-              <li><a href="/formation">{t('formation')}</a></li>
-              <li><a href="/drone">{t('drone')}</a></li>
+          <li>
+            <button type="button">{t('activites')}</button>
+            <ul>
+              <li><Link to="/consulting">{t('consulting')}</Link></li>
+              <li><Link to="/formation">{t('formation')}</Link></li>
+              <li><Link to="/drone">{t('drone')}</Link></li>
             </ul>
           </li>
-          <li className="nav-item">
-            <button type="button" className="nav-link-button">{t('secteurs')}</button>
-            <ul className="submenu">
-              <li><a href="/construction">{t('construction')}</a></li>
-              <li><a href="/industrie">{t('industrie')}</a></li>
-              <li><a href="/energie">{t('energie')}</a></li>
+          <li>
+            <button type="button">{t('secteurs')}</button>
+            <ul>
+              <li><Link to="/construction">{t('construction')}</Link></li>
+              <li><Link to="/industrie">{t('industrie')}</Link></li>
+              <li><Link to="/energie">{t('energie')}</Link></li>
             </ul>
           </li>
-          <li className="nav-item"><a href="/contact">{t('contact')}</a></li>
-          <li className="nav-item"><a href="/actualites">{t('actualites')}</a></li>
+          <li><Link to="/contact">{t('contact')}</Link></li>
+          <li><Link to="/actualites">{t('actualites')}</Link></li>
         </ul>
       </nav>
     </header>
