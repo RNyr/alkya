@@ -1,7 +1,7 @@
 {
-  "name": "alcya",
+  "name": "alkya",
   "version": "0.1.0",
-  "homepage": "https://RNyr.github.io/alkya",
+  "homepage": "https://RNyr.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
